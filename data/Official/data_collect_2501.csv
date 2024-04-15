@@ -1,0 +1,64 @@
+ID,SMILES,Title,Activity,Reference,Unit,Value
+te_1,O=C(NCCC[Te]CCCC)OC(C)(C)C,Organotellurium_1,Active,https://doi.org/10.1128/aac.01231-16,,
+te_2,O=C(NCCC[Te]CCCC)C1=CC=CC=C1,Organotellurium_2,Active,https://doi.org/10.1128/aac.01231-16,,
+te_3,O=C(NCCCC[Te]CCCC)C1=CC=CC=C1,Organotellurium_3,Active,https://doi.org/10.1128/aac.01231-16,,
+te_4,O=C(NCCCCC[Te]CCCC)C1=CC=CC=C1,Organotellurium_4,Active,https://doi.org/10.1128/aac.01231-16,,
+te_5,CCCC[Te]/C=C(C(OCC)=O)/C(O)C1=CC=CC=C1,Organotellurium_5,Inactive,https://doi.org/10.1128/aac.01231-16,,
+CMLD012336,O=C1NC2=C(C=CC(F)=C2)C1(C3=C(OC[C@H](O)CC(C)=C)C=C(OCO4)C4=C3)C5=C(OC[C@H](O)CC(C)=C)C=C(OCO6)C6=C5,Azoffluxin,Active,https://doi.org/10.1038/s41467-020-20183-3,,
+M19,CN(CC1CC1)CCCOC2=C(Cl)C=C(Cl)C=C2,clorgyline_analogs,Active,https://doi.org/10.3390/jof9060663,,
+M25,CN(CC=C)CCCOC1=C(Cl)C=C(Cl)C=C1,clorgyline_analogs,Active,https://doi.org/10.3390/jof9060663,,
+M3,CN(CC#C)CCCOC1=C(Cl)C=CC(Cl)=C1,clorgyline_analogs,Inactive,https://doi.org/10.3390/jof9060663,,
+M5,ClC1=C(OCCCNCC#C)C=CC(Cl)=C1,clorgyline_analogs,Inactive,https://doi.org/10.3390/jof9060663,,
+M18,ClC1=C(OCCCN(C)CC#C)C=CC(Cl)=C1,clorgyline_analogs,Inactive,https://doi.org/10.3390/jof9060663,,
+M20,CN(CC1CO1)CCCOC2=C(Cl)C=C(Cl)C=C2,clorgyline_analogs,Inactive,https://doi.org/10.3390/jof9060663,,
+spiroindolinone_1,O=C1C2([C@@H](C(N(C3=CC=C(F)C=C3)C4=O)=O)[C@@H]4[C@@H](CC5=CC=CC=C5)N2)C6=CC=C(Cl)C(C)=C6N1,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,0
+spiroindolinone_2,O=C1C2([C@@H](C(N(CC3=CC=CC=C3)C4=O)=O)[C@@H]4[C@@H](CC5=CC=CC=C5)N2)C6=CC=CC=C6N1,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,10
+spiroindolinone_3,O=C1C2([C@@H](C(N(CC3=CC=CC=C3)C4=O)=O)[C@@H]4[C@@H](CC5=CNC6=C5C=CC=C6)N2)C7=CC=CC=C7N1,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,10
+spiroindolinone_4,O=C1C2([C@@H](C(N(CC3=CC=CC=C3)C4=O)=O)[C@@H]4[C@@H](CCCCNC(OC(C)(C)C)=O)N2)C5=CC=CC=C5N1,spiroindolinone_derrivatives,Inactive,US00000011174267B220211116,EC50,100
+spiroindolinone_5,O=C1C2([C@@H](C(N(C3=CC=CC=C3)C4=O)=O)[C@@H]4[C@@H](CC5=CC=CC=C5)N2)C6=CC(OC)=CC=C6N1,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"3,936"
+spiroindolinone_6,O=C1C2([C@@H](C(N(CC3=CC=CC=C3)C4=O)=O)[C@@H]4[C@@H](CC5=CC=CC=C5)N2)C6=CC=CC=C6N1CC7=CC=CC=C7,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,10
+spiroindolinone_7,O=C1C2([C@@H](C(N(C3=CC=CC=C3)C4=O)=O)[C@@H]4[C@@H](CC5=CC=CC=C5)N2)C6=CC=CC=C6N1CC7=CC=CC=C7,spiroindolinone_derrivatives,Inactive,US00000011174267B220211116,EC50,100
+spiroindolinone_8,O=C1C2([C@@H](C(N(C3=CC=CC=C3)C4=O)=O)[C@@H]4[C@@H](CC5=CC=CC=C5)N2)C6=CC=C(Cl)C(C)=C6N1,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,001"
+spiroindolinone_9,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OC(C)(C)C)=O)C3)[C@@]54C6=CC=C(Cl)C(C)=C6NC5=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,0056"
+spiroindolinone_10,O=C1N(C2=CC=C(F)C=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OC(C)(C)C)=O)C3)[C@@]54C6=CC=C(Cl)C(C)=C6NC5=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,037"
+spiroindolinone_11,O=C1N(C2=CC(F)=CC(F)=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OC(C)(C)C)=O)C3)[C@@]54C6=CC=C(Cl)C(C)=C6NC5=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,0237"
+spiroindolinone_12,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OC(C)(C)C)=O)C3)[C@@]54C6=CC=C(Cl)C(C)=C6N(CC7=CC=CC=C7)C5=O)=O,spiroindolinone_derrivatives,Inactive,US00000011174267B220211116,EC50,100
+spiroindolinone_13,O=C1N(CC2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OC(C)(C)C)=O)C3)[C@@]54C6=CC=CC=C6N(CC7=CC=CC=C7)C5=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,0318"
+spiroindolinone_14,O=C1N(CC2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OC(C)(C)C)=O)C3)[C@@]54C6=CC=CC=C6NC5=O)=O,spiroindolinone_derrivatives,Inactive,US00000011174267B220211116,EC50,100
+spiroindolinone_15,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OC(C)(C)C)=O)C3)[C@@]54C6=CC=CC=C6N(CC7=CC=CC=C7)C5=O)=O,spiroindolinone_derrivatives,Inactive,US00000011174267B220211116,EC50,100
+spiroindolinone_16,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OC(C)(C)C)=O)C3)[C@@]54C6=CC(OC)=CC=C6NC5=O)=O,spiroindolinone_derrivatives,Inactive,US00000011174267B220211116,EC50,100
+spiroindolinone_17,O=C1N(CC2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OC(C)(C)C)=O)C3)[C@@]54C6=CC(OC)=CC=C6NC5=O)=O,spiroindolinone_derrivatives,Inactive,US00000011174267B220211116,EC50,230
+spiroindolinone_18,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OC(C)(C)C)=O)C3)[C@@]54C6=CC=CC(C)=C6NC5=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,213"
+spiroindolinone_19,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OC(C)(C)C)=O)C3)[C@@]54C6=CC=C(C)C(C)=C6NC5=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,0057"
+spiroindolinone_20,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCNC3)[C@@]54C6=CC=C(Cl)C(C)=C6NC5=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,10
+spiroindolinone_21,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(CCCCCCCCC(OC)=O)=O)C3)[C@@]54C6=CC=C(Cl)C(C)=C6NC5=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,0379"
+spiroindolinone_22,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C([C@@H](OC)C5=CC=CC=C5)=O)C3)[C@@]64C7=CC=C(Cl)C(C)=C7NC6=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,035"
+spiroindolinone_23,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(CCC5=CC=CC=C5)=O)C3)[C@@]64C7=CC=C(Cl)C(C)=C7NC6=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,0181"
+spiroindolinone_24,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(NCC5=CC=CC=C5)=O)C3)[C@@]64C7=CC=C(Cl)C(C)=C7NC6=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,256"
+spiroindolinone_25,O=C1N(C2=CC=CC=C2)C([C@@H]([C@@H]1[C@@H]3N4CCN(C(OCC5=CC=CC=C5)=O)C3)[C@@]64C7=CC=C(Cl)C(C)=C7NC6=O)=O,spiroindolinone_derrivatives,Active,US00000011174267B220211116,EC50,"0,0003"
+mil_a9,C/C(C[C@@H](C)/C=C/C=C(CO1)/[C@]2(O)[C@@]1(C)[C@H](O)C(COC(C3=CC=CN3)=O)=C[C@@]2([H])C(O4)=O)=C\C[C@]5([H])C[C@@]4([H])C[C@@]6(O[C@H](C)[C@@H](C)CC6)O5,milbemycins,Active,DOI: 10.2174/0929867324666170523102244,,
+mil_a11,C/C(C[C@@H](C)/C=C/C=C(CO1)/[C@]2(O)[C@@]1(C)[C@H](O)C(COC(/C=C(C)/C)=O)=C[C@@]2([H])C(O3)=O)=C\C[C@]4([H])C[C@@]3([H])C[C@@]5(O[C@H](C)[C@@H](C)CC5)O4,milbemycins,Active,DOI: 10.2174/0929867324666170523102244,,
+mil_b9,O=C1[C@]2([H])C=C(C)[C@@H](OC)[C@@H](O)[C@@]2(O)/C(CO)=C([H])\C=C/[C@H](C)C/C(C)=C([H])\C[C@@](C3)([H])O[C@@]4(CC[C@H](C)[C@@H](C)O4)C[C@@]3([H])O1,milbemycins,Active,DOI: 10.2174/0929867324666170523102244,,
+macro_diterpen1,O=C(/C=C/C1=CC=CC=C1)O[C@]2(C[C@H](CO)[C@@H]3O)[C@@]3([H])[C@@](O4)([H])[C@]4(C)CC[C@@](C5(C)C)([H])[C@@]5([H])/C=C(C)/C2=O,latilagasceneB,Active,10.1055/s-0042-106169,,
+macro_diterpen2,O=C(/C=C/C1=CC=CC=C1)O[C@]2(C[C@H](COC(C3=CC=CC=C3)=O)[C@@H]4OC(C)=O)[C@@]4([H])[C@@](O5)([H])[C@]5(C)CC[C@@](C6(C)C)([H])[C@@]6([H])/C=C(C)/C2=O,latilagasceneG,Active,10.1055/s-0042-106169,,
+macro_diterpen3,O=C(/C=C/C1=CC=CC=C1)O[C@]2(C[C@H](COC(CC)=O)[C@@H]3OC(CC)=O)[C@@]3([H])[C@@](O4)([H])[C@]4(C)CC[C@@](C5(C)C)([H])[C@@]5([H])/C=C(C)/C2=O,latilagasceneH,Active,10.1055/s-0042-106169,,
+macro_diterpen4,O=C(/C=C/C1=CC=CC=C1)O[C@]2(C[C@H](COC(CCC)=O)[C@@H]3OC(CCC)=O)[C@@]3([H])[C@@](O4)([H])[C@]4(C)CC[C@@](C5(C)C)([H])[C@@]5([H])/C=C(C)/C2=O,latilagasceneI,Active,10.1055/s-0042-106169,,
+macro_diterpen5,C=C([C@@H](OC(C)=O)C[C@@H](OC(C)=O)C(C)(C)/C=C/[C@@H]1C)[C@H](OC(C)=O)[C@]2([H])[C@@](C[C@H](C)[C@@H]2OC(C)=O)(OC(C)=O)C1=O,pepluaninD,Inactive,10.1055/s-0042-106169,,
+macro_diterpen6,C=C([C@@H](OC(CC(C)C)=O)[C@H]1OC(C)=O)[C@H](OC(C)=O)[C@@]2([H])[C@@H](OC(C)=O)[C@@H](C)C[C@@](O)2[C@@H](OC(C3=CC=CC=C3)=O)[C@@H](C)/C=C/C(C)(C)C1=O,tuckeyanolA,Active,10.1055/s-0042-106169,,
+macro_diterpen7,C=C([C@@H](OC(C(C)C)=O)[C@H]1OC(C)=O)[C@H](OC(C)=O)[C@@]2([H])[C@@H](OC(C)=O)[C@@H](C)C[C@@](O)2[C@@H](OC(C3=CC=CC=C3)=O)[C@@H](C)/C=C/C(C)(C)C1=O,tuckeyanolB,Active,10.1055/s-0042-106169,,
+macro_diterpen8,O=C1/C(C)=C/CC(C)(C)[C@H](OC(C)=O)C[C@H](OC(C2=CC=CC=C2)=O)/C(C)=C\[C@]3([H])[C@]1(OC(C)=O)C[C@H](C)[C@@H]3OC(C)=O,pubesceneA,Active,10.1055/s-0042-106169,,
+macro_diterpen9,C[C@H]1/C=C/C(C)(C)[C@H](OC(C)=O)[C@@H](OC(C)=O)[C@H](OC(C)=O)/C(C)=C\[C@]2([H])[C@@](C[C@H](C)[C@@H]2OC(C)=O)(OC(C)=O)[C@@H]1OC(C)=O,Euphopubescene,Inactive,10.1055/s-0042-106169,,
+macro_diterpen10,C[C@@H](C([C@](C[C@H](C)[C@@H]1OC(C2=CC=CC=C2)=O)(OC(C)=O)[C@@]1(O)[C@@H](OC(C)=O)C(C[C@H]3OC(C)=O)=C)=O)/C=C/C(C)(C)C3=O,euphopubescenol,Inactive,10.1055/s-0042-106169,,
+macro_diterpen11,C[C@H]1/C=C/C(C)(C)[C@H](OC(C)=O)[C@@H](OC(C)=O)[C@H](OC(C)=O)/C(C)=C\[C@]2([H])[C@@](C[C@H](C)[C@@H]2OC(C3=CC=CC=C3)=O)(OC(C)=O)[C@H]1OC(C)=O,euphomellifereneA,Active,10.1055/s-0042-106169,,
+macro_diterpen12,C[C@H]1/C=C/C(C)(C)[C@H](OC(C)=O)[C@@H](OC(C)=O)[C@H](OC(C)=O)/C(C)=C\[C@]2([H])[C@@](C[C@H](C)[C@@H]2OC(C3=CC=CC=C3)=O)(O)[C@H]1OC(C)=O,euphomellifereneB,Active,10.1055/s-0042-106169,,
+macro_diterpen13,C[C@H]1/C=C/C(C)(C)[C@H](OC(C)=O)[C@@H](OC(C)=O)[C@H](OC(C)=O)/C(C)=C\[C@]2([H])[C@@](C[C@@H](C)[C@@H]2OC(C3=CC=CC=C3)=O)(O)C1=O,euphomelliferinee,Active,10.1055/s-0042-106169,,
+5282071,CCC1C=C(CC(CC(C2C(CC(C(O2)(C(=O)C(=O)N3CCCCC3C(=O)OC(C(C(CC1=O)O)C)C(=CC4CCC(C(C4)OC)O)C)O)C)OC)OC)C)C,ascomycin_fk520,Active,DOI: 10.2174/0929867324666170523102244,,
+78358496,CCC1CCC2C(C(C(C3(O2)CCC(C(O3)CC(C)O)C)C)OC(=O)C=CC(C(C(C(=O)C(C(C(C(=O)C(C(C(CC=CC=C1)C)O)(C)O)C)O)C)C)O)C)C,oligomycin,Active,DOI: 10.2174/0929867324666170523102244,,
+5284373,CCC1C(=O)N(CC(=O)N(C(C(=O)NC(C(=O)N(C(C(=O)NC(C(=O)NC(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N1)C(C(C)CC=CC)O)C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C,cyclosporin,Active,DOI: 10.2174/0929867324666170523102244,,
+24778015,CCCCCC1CC(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)O1)CC2=CC=CC=C2)CC(C)C)CC3=CC=CC=C3)CC(C)C,unnarmycinC,Active,DOI: 10.2174/0929867324666170523102244,,
+72300,C=CCC1=CC(=C(C=C1)O)C2=C(C=CC(=C2)CC=C)O,magnolol,Active,DOI: 10.2174/0929867324666170523102244,,
+flavanones,CC(C=C)(C)C1=C(O)C=C(O)C([C@@H]2CC(C3=C(O)C(C/C=C(C)/C)=C(O)C=C3O2)=O)=C1,prenylated_flavanones,Active,DOI: 10.2174/0929867324666170523102244,,
+N_ethylmaleimid,CCN1C(=O)C=CC1=O,N_ethylmaleimid,Active,DOI: 10.2174/0929867324666170523102244,,
+3117,CCN(CC)C(=S)SSC(=S)N(CC)CC,Disulfiram,Active,DOI: 10.2174/0929867324666170523102244,,
+1549008,CC(C)(C)C#CC=CCN(C)CC1=CC=CC2=CC=CC=C21,terbinafine,Active,https://doi.org/10.1016/S0924-8579(03)00213-9,,
+9959038,CCC1C(CCC2(O1)CC3CC(O2)CC=C(CC(C=CC=C4COC5C4(C(C=C(C5O)C)C(=O)O3)O)C)C)C,milbemycins,Active,https://doi.org/10.1111/1567-1364.12164,,
