@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1/mlruns/203906807781142328/cfa7fc09603a4e8e8cc86681fc68f700/artifacts
+end_time: 1711389894918
+entry_point_name: ''
+experiment_id: '203906807781142328'
+lifecycle_stage: active
+run_id: cfa7fc09603a4e8e8cc86681fc68f700
+run_name: stylish-dove-54
+run_uuid: cfa7fc09603a4e8e8cc86681fc68f700
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711385168487
+status: 3
+tags: []
+user_id: thechuongtrinh

@@ -1,0 +1,1 @@
+{"C": 50014.798288569255, "gamma": "scale", "class_weight": null, "iterations": 374, "learning_rate": 0.0037520558551242854, "depth": 7, "l2_leaf_reg": 8.171304639059403e-06, "alpha": 0.006847920095574782, "hidden_layer_sizes": 128}

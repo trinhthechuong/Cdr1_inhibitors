@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1/mlruns/442543525372353667/e10f0c1747d949bcb02d62641e3a289f/artifacts
+end_time: 1711595287568
+entry_point_name: ''
+experiment_id: '442543525372353667'
+lifecycle_stage: active
+run_id: e10f0c1747d949bcb02d62641e3a289f
+run_name: capable-auk-759
+run_uuid: e10f0c1747d949bcb02d62641e3a289f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711593633343
+status: 4
+tags: []
+user_id: thechuongtrinh

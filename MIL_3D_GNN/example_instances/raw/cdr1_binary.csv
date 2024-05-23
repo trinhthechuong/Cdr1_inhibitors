@@ -1,0 +1,11 @@
+ID,Canonical_smiles,Title,Activity,Reference
+Isonitrile_1,[C-]#[N+]C1=CC(=CCC(=O)O)CC1,Isonitrile_derrivatives,1.0,https://doi.org/10.1016/j.bbrc.2005.03.009
+WK14,Oc1ccccc1/C=C/c1ccc2cccc(O)c2n1,Styrylquinolines,1.0,https://doi.org/10.1016/j.ijantimicag.2017.01.044
+WK14B,CC(=O)Oc1ccccc1/C=C/c1ccc2cccc(OC(C)=O)c2n1,Styrylquinolines,1.0,https://doi.org/10.1016/j.ijantimicag.2017.01.044
+WK15,Oc1cccc(/C=C/c2ccc3cccc(O)c3n2)c1,Styrylquinolines,0.0,https://doi.org/10.1016/j.ijantimicag.2017.01.044
+WK15B,CC(=O)Oc1cccc(/C=C/c2ccc3cccc(O)c3n2)c1,Styrylquinolines,0.0,https://doi.org/10.1016/j.ijantimicag.2017.01.044
+Chalcone_6,CCN(CC)CCOC1=C[C@@H]2OC(=O)S[C@H]2C=C1C(=O)/C=C/c1ccc(OC)cc1,Chalcones,1.0,https://doi.org/10.3389/fmicb.2015.00783
+Chalcone_18,COc1cc(/C=C/C(=O)c2c(OC)ccc3oc(=O)sc23)ccc1OCCCN(C)C,Chalcones,1.0,https://doi.org/10.3389/fmicb.2015.00783
+Azole_12,COc1ccc(C(=O)/C=C/c2cc(OC)c(OC)c(OC)c2)c(O)c1,Azoles,1.0,https://doi.org/10.4155/fmc-2018-0081
+Azole_18,COc1cc(O)c(C(=O)/C=C/C2=C[C@@H]3OCO[C@H]3C=C2)c(OC)c1,Azoles,1.0,https://doi.org/10.4155/fmc-2018-0081
+1a,c1ccc(-c2nc3ccccc3n3c(N4CCN(c5ccccc5)CC4)ccc23)cc1,Quinoxalines,1.0,https://doi.org/10.1039/C9RA09348F

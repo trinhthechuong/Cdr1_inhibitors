@@ -1,0 +1,16 @@
+artifact_uri: file:///Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1/mlruns/203906807781142328/b996887ba1bd400cb576aa6c435f4467/artifacts
+deleted_time: 1712013137204
+end_time: 1711491586763
+entry_point_name: ''
+experiment_id: '203906807781142328'
+lifecycle_stage: deleted
+run_id: b996887ba1bd400cb576aa6c435f4467
+run_name: skillful-gnu-617
+run_uuid: b996887ba1bd400cb576aa6c435f4467
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711491571670
+status: 3
+tags: []
+user_id: thechuongtrinh
