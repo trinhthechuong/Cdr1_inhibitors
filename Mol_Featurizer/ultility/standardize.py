@@ -54,9 +54,9 @@ class standardization:
     
     def filter_data(self):
         self.data['Canonicalsmiles'] = self.data[self.smiles_col].apply(Chem.CanonSmiles)
-        self.data = self.data[self.data['Canonicalsmiles'].progress_apply(calculate_ro5_properties, fullfill = self.ro5)]  
+        self.data = self.data[self.data['Canonicalsmiles'].apply(calculate_ro5_properties, fullfill = self.ro5)]  
         block = BlockLogs()
-        self.data['Molecule'] = self.data['Canonicalsmiles'].progress_apply(self.standardize)
+        self.data['Molecule'] = self.data['Canonicalsmiles'].apply(self.standardize)
         self.data["Standardize_smile"] = self.data["Molecule"].apply(Chem.MolToSmiles)
         
         return self.data
