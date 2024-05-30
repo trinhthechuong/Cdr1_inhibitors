@@ -37,7 +37,7 @@ streamlit run EMCIP.py
 
 ## EMCIP GUI FOR NON-EXPERT USERS
 
-EMCIP provides two functionalities: Batch Prediction and Molecule Prediction.
+EMCIP provides two functionalities: **Batch Prediction** and **Molecule Prediction**.
 
 ### Batch Prediction
 
