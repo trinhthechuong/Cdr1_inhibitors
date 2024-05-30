@@ -78,7 +78,7 @@ The `dataset` folder stores all training data and corresponding results.
 - `bayesian_estimation` sub-folder houses the results comparing machine learning model performance through Bayesian estimation
 ### MIL-3D-GNN
 - Validation results for MIL-3D-GNN on validation, external, and hard test sets are stored in the `validation_mil_3d_gnn` subfolder. 
-- To view the hyperparameter tuning process for MIL-3D-GNN, run the following commands in your terminal:  
+- To view the hyperparameter tuning process for MIL-3D-GNN on mlflow, run the following commands in your terminal:  
 ```bash
 cd MIL_3D_GNN
 mlflow server --host 127.0.0.1 --port 8080
