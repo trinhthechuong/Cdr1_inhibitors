@@ -22,7 +22,7 @@ We introduce the **EMCIP model** for classifying potential Cdr1 inhibitors.
 
 ## Installation
 
-To set up the environment for EMCIP, you'll need Conda v24.1.2 and Pip 23.3.1. For Conda installation instructions, refer to [this link](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
+To set up the environment for EMCIP, you'll need Conda v24.1.2. For Conda installation instructions, refer to [this link](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
 Run the following commands in your terminal to install EMCIP:
 

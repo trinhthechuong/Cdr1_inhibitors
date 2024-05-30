@@ -4,11 +4,7 @@ xgboost==2.0.0
 catboost==1.2.2
 torch==2.2.0
 deepchem==2.7.1
-# torch-cluster==1.6.3
 torch-geometric==2.4.0
-# torch-scatter==2.1.2
-# torch-sparse==0.6.18
-# torch-spline-conv==1.2.2
 rdkit==2023.3.3
 stmol==0.0.9
 streamlit==1.33.0
