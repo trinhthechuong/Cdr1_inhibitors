@@ -1,12 +1,12 @@
 from MIL_3D_GNN import instance_GNN
 import sys
 sys.path.append("..")
-from conformation_encode.GraphDataset_test import BagMoleculeDataset
+from conformation_encode.GraphDataset import BagMoleculeDataset
 import torch
 import os
 import random
 import numpy as np
-from sklearn.metrics import f1_score, confusion_matrix, average_precision_score, balanced_accuracy_score, recall_score
+from sklearn.metrics import f1_score, confusion_matrix, average_precision_score, balanced_accuracy_score
 from tqdm import tqdm
 from torch_geometric.data import DataLoader
 import warnings

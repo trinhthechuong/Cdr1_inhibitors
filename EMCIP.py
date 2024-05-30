@@ -113,7 +113,7 @@ if st.session_state['choose'] == "Predict a batch":
 
     if st.session_state.get("featurization_message"):
         st.success(st.session_state["featurization_message"])
-    st.subheader('3. Cdr1 Inhibitors Classification')
+    st.subheader('3. Cdr1 Inhibitors Prediction')
     if st.button("Predict", key="Predict"):
         if st.session_state.get("Calculated") != "Yes":
             if st.session_state.get("uploaded_file") is None:
@@ -144,7 +144,7 @@ if st.session_state["choose"] == "Predict a molecule":
     st.subheader("1. Input SMILES")
     cur_smiles = "COc1cc(C=CC(=O)CC(=O)C=Cc2ccc(O)c(OC)c2)ccc1O"
     smile_input = st.text_input("Please, input your SMILES",cur_smiles, key="smile_input")
-    st.subheader("2. CDR1 Inhibitors Prediction")
+    st.subheader("2. Cdr1 Inhibitor Prediction")
     if st.button("Predict", key="Predict"):
         if smile_input == "":
             st.write("Please input your SMILES")

@@ -1,12 +1,8 @@
-#from openbabel import openbabel as ob
-#from openbabel import pybel
 from rdkit import Chem
 from rdkit.Chem import AllChem
-            
 from itertools import combinations
 import rdkit
 from rdkit.Chem import rdDistGeom
-
 import py3Dmol
 from rdkit.Chem.Draw import IPythonConsole
 

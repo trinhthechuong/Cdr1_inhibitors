@@ -21,7 +21,7 @@ from sklearn.model_selection import cross_val_score
 
 class statical_test:
 
-    def __init__(self, results, model,Data_train = None , X_train = None ,y_train = None):
+    def __init__(self, results, model,Data_train = None , X_train = None ,y_train = None, y_name = "Activity"):
         if  type(Data_train) == DataFrame:
             self.X_train = Data_train.drop([y_name], axis = 1)
             self.y_train = Data_train[y_name]

@@ -1,17 +1,8 @@
 #@title [RUN] Import python modules
-#import deepchem as dc
-import os
-import time
-import random
 import numpy as np
 import math
-from scipy.stats import ortho_group
-
 import torch
-from torch_scatter import scatter
-
 import rdkit.Chem as Chem
-from rdkit.Chem import AllChem
 
 
 

@@ -1,29 +1,16 @@
 # Classification
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import os
-import seaborn as sns
-from imblearn.pipeline import Pipeline
 from sklearn.feature_selection import SelectFromModel, SelectKBest, mutual_info_classif, chi2, RFE, RFECV, f_classif,mutual_info_regression,f_regression
-from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
-from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, AdaBoostClassifier, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
 from xgboost import XGBClassifier
-from catboost import CatBoostClassifier
+# from catboost import CatBoostClassifier
 from sklearn.model_selection import StratifiedKFold, cross_val_score, RepeatedStratifiedKFold
 from sklearn.svm import LinearSVC, SVC
 
 # Regression
-from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
-from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor, ExtraTreesRegressor, AdaBoostRegressor, GradientBoostingRegressor
 from sklearn.linear_model import LogisticRegression, LinearRegression, LassoCV
-from sklearn.neighbors import KNeighborsRegressor
 from xgboost import XGBRegressor
-from catboost import CatBoostRegressor
 from sklearn.model_selection import KFold, cross_val_score, RepeatedKFold
 from sklearn.svm import LinearSVR, SVR
 

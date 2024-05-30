@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import pickle
 from sklearn.metrics import confusion_matrix, f1_score, balanced_accuracy_score, average_precision_score, roc_auc_score
 from sklearn.svm import SVC
 from catboost import CatBoostClassifier

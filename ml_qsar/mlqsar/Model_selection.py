@@ -4,24 +4,20 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 import seaborn as sns
-from imblearn.pipeline import Pipeline
+from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, RobustScaler, FunctionTransformer
 #Library in Model Selection class
 from sklearn.metrics import roc_auc_score,average_precision_score,accuracy_score,recall_score,precision_score,f1_score,classification_report,log_loss,brier_score_loss,hamming_loss
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors    import KNeighborsClassifier
 from sklearn.svm          import SVC, NuSVC
-from sklearn.tree         import DecisionTreeClassifier
+# from sklearn.tree         import DecisionTreeClassifier
 from sklearn.ensemble     import RandomForestClassifier,AdaBoostClassifier,GradientBoostingClassifier, ExtraTreesClassifier
 from xgboost              import XGBClassifier
 from catboost             import CatBoostClassifier
 from sklearn.neural_network import MLPClassifier
-from sklearn.naive_bayes import GaussianNB, BernoulliNB
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis, QuadraticDiscriminantAnalysis
-from sklearn.dummy import DummyClassifier
 from sklearn.model_selection import StratifiedKFold, cross_val_score, RepeatedStratifiedKFold
 from sklearn.model_selection import KFold, cross_val_score, RepeatedKFold
-from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression, ElasticNetCV, Ridge
 from sklearn.neighbors import KNeighborsRegressor
@@ -30,17 +26,13 @@ from sklearn.ensemble import GradientBoostingRegressor, ExtraTreesRegressor, Ada
 from xgboost import XGBRegressor
 from catboost import CatBoostRegressor
 from sklearn.svm import SVR
-from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
-from sklearn.metrics import mean_absolute_percentage_error, max_error, mean_squared_log_error
 from sklearn.model_selection import KFold
 from sklearn.cross_decomposition import PLSRegression
 from sklearn.ensemble import HistGradientBoostingRegressor
-from sklearn.isotonic import IsotonicRegression
 from sklearn.linear_model import SGDRegressor, HuberRegressor,TheilSenRegressor, RANSACRegressor
 from sklearn.pipeline import make_pipeline
 from sklearn.decomposition import PCA
 from sklearn.neural_network import MLPRegressor
-from imblearn.pipeline import Pipeline
 from sklearn.gaussian_process.kernels import DotProduct, WhiteKernel
 from sklearn.gaussian_process import GaussianProcessRegressor
 from itertools import accumulate, chain

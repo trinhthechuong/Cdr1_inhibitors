@@ -1,29 +1,19 @@
 import pandas as pd
 import numpy as np
-import rdkit
 from rdkit import Chem
-from rdkit.Chem import AllChem
 import torch
-import torch_geometric
 from torch_geometric.data import Dataset, Data
 import os
 from tqdm import tqdm
-import deepchem as dc
-import torch.nn.functional as F
-from torch_geometric.nn import GCNConv
 import torch_geometric.transforms as T
 from .conformer_featurizer_onehot import RDKitConformerFeaturizer, RDKitMultipleConformerFeaturizer
 from .coord_features import cal_node_spatial_feature, atomic_shape, ring_information, cal_spatial_angle, cal_spatial_distance
-from .generate_conformations import generate_conformations
 import pickle
 from joblib import Parallel, delayed
 from joblib_progress import joblib_progress
-import time
-from rdkit.Chem.MolStandardize import rdMolStandardize
 import sys
 sys.path.append("..")
-
-from Mol_Featurizer.ultility.standardize import standardization
+from Mol_Standardize.standardize import standardization
 import glob
 #print(f"Torch version: {torch.__version__}")
 #print(f"Torch geometric version: {torch_geometric.__version__}")
@@ -249,7 +239,6 @@ class BagMoleculeDataset(torch.utils.data.Dataset):
         if self.valid == True:
             file_list = glob.glob(self.processed_dir + "/*val*")
             self.file_count = len(file_list)
-            #print(self.file_count)
 
         elif self.test == True:
             file_list = glob.glob(self.processed_dir + "/*test*")
@@ -263,7 +252,6 @@ class BagMoleculeDataset(torch.utils.data.Dataset):
                 if "valid" not in file and "test" not in file:
                     filter_train.append(file)
             self.file_count = len(filter_train)
-            print("*****")
             #print(self.file_count)
 
         if self.file_count==0:
@@ -454,6 +442,23 @@ class BagMoleculeDataset(torch.utils.data.Dataset):
         return torch.tensor(label, dtype=torch.int64)
 
     def __len__(self):
+        if self.valid == True:
+            file_list = glob.glob(self.processed_dir + "/*val*")
+            self.file_count = len(file_list)
+            #print(self.file_count)
+
+        elif self.test == True:
+            file_list = glob.glob(self.processed_dir + "/*test*")
+            self.file_count = len(file_list)
+
+        else:
+            file_list = os.listdir(self.processed_dir)
+            data_list = [file for file in file_list if "data" in file]
+            filter_train = []
+            for file in data_list:
+                if "valid" not in file and "test" not in file:
+                    filter_train.append(file)
+            self.file_count = len(filter_train)
         return self.file_count
 
     def __getitem__(self, idx):

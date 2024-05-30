@@ -5,7 +5,6 @@ from rdkit.Chem import AllChem
 import deepchem as dc
 from deepchem.feat.graph_data import GraphData
 from deepchem.feat import MolecularFeaturizer
-from rdkit.Chem import rdDistGeom
 import torch
 
 from .generate_conformations import generate_conformations
@@ -289,7 +288,7 @@ class RDKitConformerFeaturizer(MolecularFeaturizer):
 #                                       Featurizer for multiple conformations                              #
 ############################################################################################################
     
-from deepchem.utils.molecule_feature_utils import one_hot_encode
+# from deepchem.utils.molecule_feature_utils import one_hot_encode
 from deepchem.utils.molecule_feature_utils import get_atom_type_one_hot
 from deepchem.utils.molecule_feature_utils import construct_hydrogen_bonding_info
 from deepchem.utils.molecule_feature_utils import get_atom_hydrogen_bonding_one_hot
@@ -299,17 +298,17 @@ from deepchem.utils.molecule_feature_utils import get_atom_is_in_aromatic_one_ho
 
 from deepchem.utils.molecule_feature_utils import get_atom_chirality_one_hot
 from deepchem.utils.molecule_feature_utils import get_atom_formal_charge
-from deepchem.utils.molecule_feature_utils import get_atom_partial_charge
+# from deepchem.utils.molecule_feature_utils import get_atom_partial_charge
 from deepchem.utils.molecule_feature_utils import get_atom_total_degree_one_hot
 from deepchem.utils.molecule_feature_utils import get_bond_type_one_hot
 from deepchem.utils.molecule_feature_utils import get_bond_is_in_same_ring_one_hot
 from deepchem.utils.molecule_feature_utils import get_bond_is_conjugated_one_hot
 from deepchem.utils.molecule_feature_utils import get_bond_stereo_one_hot
-from deepchem.utils.molecule_feature_utils import get_atom_formal_charge_one_hot
-from deepchem.utils.molecule_feature_utils import get_atom_implicit_valence_one_hot
-from deepchem.utils.molecule_feature_utils import get_atom_explicit_valence_one_hot
-from deepchem.utils.rdkit_utils import compute_all_pairs_shortest_path
-from deepchem.utils.rdkit_utils import compute_pairwise_ring_info
+# from deepchem.utils.molecule_feature_utils import get_atom_formal_charge_one_hot
+# from deepchem.utils.molecule_feature_utils import get_atom_implicit_valence_one_hot
+# from deepchem.utils.molecule_feature_utils import get_atom_explicit_valence_one_hot
+# from deepchem.utils.rdkit_utils import compute_all_pairs_shortest_path
+# from deepchem.utils.rdkit_utils import compute_pairwise_ring_info
     
 class RDKitMultipleConformerFeaturizer(MolecularFeaturizer):
     """

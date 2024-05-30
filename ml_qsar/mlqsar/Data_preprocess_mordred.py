@@ -7,7 +7,7 @@ import os
 from sklearn.model_selection import train_test_split
 from sklearn.feature_selection import VarianceThreshold
 
-from sklearn.experimental import enable_iterative_imputer
+# from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import SimpleImputer, IterativeImputer, KNNImputer
 from sklearn.linear_model import BayesianRidge
 from sklearn.ensemble import GradientBoostingClassifier, GradientBoostingRegressor

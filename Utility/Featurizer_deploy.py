@@ -1,6 +1,20 @@
+# import numpy as np
+# import pandas as pd
+# from rdkit import Chem, DataStructs
+# import pickle
+# from rdkit.Avalon import pyAvalonTools as fpAvalon
+# from rdkit.Chem.Pharm2D import Gobbi_Pharm2D,Generate
+# # from mordred import Calculator, descriptors
+# from tqdm import tqdm # progress bar
+# import subprocess
+# tqdm.pandas()
+# import sys
+# sys.path.append("..")
+
 import numpy as np
 import pandas as pd
 from rdkit import Chem, DataStructs
+from rdkit.Chem import PandasTools
 import pickle
 from rdkit.Avalon import pyAvalonTools as fpAvalon
 from rdkit.Chem.Pharm2D import Gobbi_Pharm2D,Generate
@@ -10,8 +24,18 @@ import subprocess
 tqdm.pandas()
 import sys
 sys.path.append("..")
-        
 
+class data_input():
+    def __init__(self, data_path, ID, smiles_col):
+        self.data_path = data_path
+        self.ID_col = ID
+        self.SMILES_col = smiles_col
+    def read_data(self):
+        data = pd.read_csv(self.data_path)
+        data = data[[self.ID_col, self.SMILES_col]]
+        data["Activity"]=0
+        return data
+    
 class representation_calculation():
     def __init__(self, data, ID_col, SMILES_col, Molecule_col,type_fpt, save_dir, Activity_col = "Activity"):
         # Delete the folder
@@ -74,8 +98,9 @@ class representation_calculation():
         self.mordred = self.data.copy()
         # calc = Calculator(descriptors, ignore_3D=True)
         # df_2d_mordred = calc.pandas(self.mordred.Molecule,quiet=True)
-        # self.mordred_raw = pd.concat([self.mordred[[self.ID, self.SMILES, "Activity"]], df_2d_mordred], axis = 1)
-        Chem.PandasTools.WriteSDF(self.mordred, f'{self.save_dir}conf.sdf', molColName=self.Mols)
+        # # self.mordred_raw = pd.concat([self.mordred[[self.ID, self.SMILES, "Activity"]], df_2d_mordred], axis = 1)
+        # Chem.PandasTools.WriteSDF(self.mordred, f'{self.save_dir}conf.sdf', molColName=self.Mols)
+        PandasTools.WriteSDF(self.mordred, f'{self.save_dir}conf.sdf', molColName=self.Mols)
         command = f"python -m mordred {f'{self.save_dir}conf.sdf'} -o {f'{self.save_dir}Mordred.csv'}"
         # Execute the command
         subprocess.run(command, shell=True, check=True)

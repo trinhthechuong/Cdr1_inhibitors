@@ -1,8 +1,8 @@
 import pandas as pd
 import sys
 sys.path.append("..")
-from Mol_Featurizer.ultility.standardize import standardization
-from conformation_encode.GraphDataset import BagMoleculeDataset, InstanceMoleculeDataset, MoleculeDataset 
+from Mol_Standardize.standardize import standardization
+from conformation_encode.GraphDataset import BagMoleculeDataset
 from rdkit.rdBase import BlockLogs
 
 

@@ -1,0 +1,11 @@
+ID,Standardize_smile
+24818973,Cc1ccc(OCc2cc(C(=O)NCC(C)(C)N3CCOCC3)no2)cc1C
+spiroindolinone_24,Cc1c(Cl)ccc2c1NC(=O)[C@@]21c2c(c(O)n(-c3ccccc3)c2O)[C@H]2CN(C(=O)NCc3ccccc3)CCN21
+44601952,COc1cc(OC)cc(-c2sc3ccc(OC)cc3c2-c2ccc(OCCN3CCCCC3)cc2)c1
+44601949,COc1cccc(-c2sc3ccc(OC)cc3c2-c2ccc(OCCN3CCCCC3)cc2)c1
+N_ethylmaleimid,CCN1C(=O)C=CC1=O
+spiroindolinone_13,CC(C)(C)OC(=O)N1CCN2[C@H](C1)c1c(c(O)n(Cc3ccccc3)c1O)[C@@]21C(=O)N(Cc2ccccc2)c2ccccc21
+spiroindolinone_9,Cc1c(Cl)ccc2c1NC(=O)[C@@]21c2c(c(O)n(-c3ccccc3)c2O)[C@H]2CN(C(=O)OC(C)(C)C)CCN21
+spiroindolinone_10,Cc1c(Cl)ccc2c1NC(=O)[C@@]21c2c(c(O)n(-c3ccc(F)cc3)c2O)[C@H]2CN(C(=O)OC(C)(C)C)CCN21
+spiroindolinone_11,Cc1c(Cl)ccc2c1NC(=O)[C@@]21c2c(c(O)n(-c3cc(F)cc(F)c3)c2O)[C@H]2CN(C(=O)OC(C)(C)C)CCN21
+spiroindolinone_18,Cc1cccc2c1NC(=O)[C@@]21c2c(c(O)n(-c3ccccc3)c2O)[C@H]2CN(C(=O)OC(C)(C)C)CCN21

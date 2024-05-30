@@ -2,7 +2,7 @@ import sys
 sys.path.append("..")
 from Utility.Featurizer_deploy import representation_calculation
 from conformation_encode.GraphDataset import BagMoleculeDataset
-from Mol_Featurizer.ultility.standardize import standardization
+from Mol_Standardize.standardize import standardization
 import shutil
 import streamlit as st
 import os

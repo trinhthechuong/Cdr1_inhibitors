@@ -1,11 +1,31 @@
-# EMCIP: AN ENSEMBLE MODEL FOR CDR1 INHIBITOR PREDICTION
-=== 
-![EMCIP_architecture](./Images/EMCIP_GUI_architecture.png)
-We herein introduce the **EMCIP model** for classifying pontential Cdr1 inhibitors.
+# EMCIP: An Ensemble Model for Cdr1 Inhibitor Prediction
+
+![EMCIP Architecture](./Images/EMCIP_GUI_architecture.png)
+
+We introduce the **EMCIP model** for classifying potential Cdr1 inhibitors.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [EMCIP GUI](#emcip-gui)
+  - [Batch Prediction](#batch-prediction)
+  - [Molecule Prediction](#molecule-prediction)
+  - [HuggingFace Version](#huggingface-version)
+- [Additional Information](#additional-information)
+  - [Datasets](#datasets)
+  - [Molecular Representation Analysis](#molecular-representation-analysis)
+  - [Traditional Machine Learning Model Selection](#traditional-machine-learning-model-selection)
+  - [MIL-3D-GNN](#mil-3d-gnn)
+- [Contributors](#contributors)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
+
 ## Installation
-===
-The Conda is needed to set up the environment for EMCIP. Installation instructions for Conda can be found at [https://conda.io/projects/conda/en/latest/user-guide/install/index.html](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
-Write these code to your terminal to install EMCIP
+
+To set up the environment for EMCIP, you'll need Conda v24.1.2 and Pip 23.3.1. For Conda installation instructions, refer to [this link](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
+
+Run the following commands in your terminal to install EMCIP:
+
 ```bash
 git clone https://github.com/trinhthechuong/Cdr1_inhibitors.git
 cd Cdr1_inhibitors
@@ -14,45 +34,69 @@ conda activate EMCIP_env
 pip install -r requirements.txt
 streamlit run EMCIP.py
 ```
+
 ## EMCIP GUI
-===
-We offer you two ways for using the EMCIP for non-expert users: Batch prediction and Molecule prediction
-### Batch prediction
-In the main menu, click `Predict a batch` tab. Follow these steps:
-1. Upload your *.csv file. Your *.csv file must have two columns. The first column contains the name or ID of your molecules, the second column contains the SMILES of these molecules. Then input the name of your first column, second column, and choose the number of processors for the calculation process.
-2. Click `Featurize` button and wait for a while. Your molecules will be standardized, calculated to molecular representations (RDK5, RDK6, RDK7, Avalon, Mordred, Gobbi Pharmacophore) and 3D molecular graphs.
-3. After the featurize process is completed, click `Prediction` button to predict your data.
-* All the featurized dataset, and  prediction result are saved in `Cdr1_classification` folder. Click `Restart` button to start predicting another file.
-![Batch_GUI](./Images/Batch_GUI.png)
-### Molecule prediction
-In the main menu, click `Predict a molecule` tab. Follow these steps:
-1. Input the SMILE of your molecule. 
-2. Click `Predict` button and wait for a while. Your molecule will be standardized, calculated to molecular representations (RDK5, RDK6, RDK7, Avalon, Mordred, Gobbi Pharmacophore) and 3D molecular graphs, and predicted by EMCIP model.
-3. The output is the predicted probability of your molecule to be Cdr1 inhibitor. 
-*You can see and interact with generated conformations used as the input for MIL-3D-GNN.*  
-![Molecule_GUI](./Images/Molecule_GUI.png)
-## Other informations
-===
-All the datasets and results of our training procedure are stored in the `dataset`folder.
+
+EMCIP provides two functionalities: Batch Prediction and Molecule Prediction.
+
+### Batch Prediction
+
+In the main menu, select the `Predict a batch` option and follow these steps:
+
+1. Upload a **.csv* file. The file must contain two columns: the first for molecule names or IDs, and the second for the SMILES of these molecules. Then, provide names for your columns and choose the number of processors for the calculation.
+2. Click the `Featurize` button and wait for the process to complete. During this step, your molecules will be standardized and converted into various molecular representations (RDK5, RDK6, RDK7, Avalon, Mordred, Gobbi Pharmacophore) and 3D molecular graphs.
+3. Once featurization is complete, click the `Prediction` button to predict your data.
+
+All featurized datasets and prediction results are saved in the `Cdr1_classification` folder. Click the `Restart` button to start predicting another file.
+
+![Batch GUI](./Images/Batch_GUI.png)
+
+### Molecule Prediction
+
+In the main menu, select the `Predict a molecule` option and follow these steps:
+
+1. Enter the SMILES string of your molecule.
+2. Click the `Predict` button and wait for the completion of the process. During this step, your molecule are standardized, converted into various molecular representations (RDK5, RDK6, RDK7, Avalon, Mordred, Gobbi Pharmacophore) and 3D molecular graphs, before being evaluated by the EMCIP model for prediction.
+3. The output is the predicted probability of your molecule being a Cdr1 inhibitor.
+Additionally, you can interact with the generated conformations used as input for MIL-3D-GNN.
+![Molecule GUI](./Images/Molecule_GUI.png)
+
+### HuggingFace Version
+The EMCIP model is also available for direct prediction on the HuggingFace platform [EMCIP-HuggingFace](https://huggingface.co/spaces/thechuongtrinh/EMCIP_Cdr1_inhibitor_prediction). However, for optimal performance, we recommend installing EMCIP locally to leverage the power of your local processors.
+
+## Additional Information
+The `dataset` folder stores all training data and corresponding results.
 ### Datasets
-- `original_dataset.csv` contains all the assembled molecules to conduct EMCIP and their references. 
-- All datasets (training set, external test set, hard test set) are stored in `Featurized_data/BM_stratified_sampling` subfolders.
-- Graph datasets for MIL-3D-GNN are stored in `Featurized_data/MIL_3D_GNN` subfolders.
-### Molecular representation analysis
-- All 16 ligand-based structural representation datasets, and the results of molecular representation meta-analysis in `molecular_representation_analysis` subfolder.
-### Traditional Machine learning model selection
--  All the validation results, including Bemis-Murcko Scaffold 5-fold cross-validation and external test set validation, are stored in `ml_model_selection` subfolder.
--  The Bayesian estimation results to compare ML model performance are stored in `ml_model_selection/bayesian_estimation` subfolder.
-### MIL-3D-GNN 
-- The validation results of MIL-3D-GNN on validation set, external test set, and hard test set are stored in `validation_mil_3d_gnn` subfolder.
-- To display our hyperparameter tuning for MIL-3D-GNN, input these codes in your terminal:
+- **original_dataset.csv**: This file contains all assembled molecules for EMCIP along with their references.
+- `Featurized_data` folder:
+    - `BM_stratified_sampling`: This sub-folder stores all datasets used for training (training set), validation (external test set, and hard test set).
+    - `MIL_3D_GNN`: This sub-folder stores graph datasets specifically used for the MIL-3D-GNN model.
+### Molecular Representation Meta-Analysis
+- `molecular_representation_analysis` sub-folder contains all 16 ligand-based structural representation datasets and the results of the associated meta-analysis, including Wilcoxon signed-rank test.
+### Traditional Machine Learning Model Selection
+- `ml_model_selection` sub-folder stores all validation results, including Bemis-Murcko Scaffold 5-fold cross-validation and external test set validation of traditional machine learning models. 
+- `bayesian_estimation` sub-folder houses the results comparing machine learning model performance through Bayesian estimation
+### MIL-3D-GNN
+- Validation results for MIL-3D-GNN on validation, external, and hard test sets are stored in the `validation_mil_3d_gnn` subfolder. 
+- To view the hyperparameter tuning process for MIL-3D-GNN, run the following commands in your terminal:  
 ```bash
 cd <"Cdr1_inhibitors path">
 mlflow server --host 127.0.0.1 --port 8080
 ```
-- To visit our multi-instance learning framwork for 3GNN, please access these 2 notebooks:[Graph featurization](./Cdr1_inhibitors/MIL_3D_GNN/graph_featurization.ipynb) and [GNN prediction](./Cdr1_inhibitors/MIL_3D_GNN/investigate_tuned_gnn.ipynb)
+- [**graph_featurization.ipynb**](./Cdr1_inhibitors/MIL_3D_GNN/graph_featurization.ipynb): This Jupyter Notebook details the process of converting molecules into graph representations for use with the MIL-3D-GNN model.
+## Contributors
 
+1. [The-Chuong Trinh](https://trinhthechuong.github.io/)
+2. [Viet-Khoa Tran-Nguyen](https://www.researchgate.net/profile/Viet-Khoa-Tran-Nguyen)
+3. [Pierre Falson](https://www.researchgate.net/profile/Pierre-Falson)
+4. [Achène Boumendjel](https://www.researchgate.net/profile/Ahcene-Boumendjel)
 
+## Contact
 
+For further queries, please contact:
+- The-Chuong Trinh: [the-chuong.trinh@etu.univ-grenoble-alpes.fr](mailto:the-chuong.trinh@etu.univ-grenoble-alpes.fr), [thechuong123@gmail.com](mailto:thechuong123@gmail.com)
+- Viet-Khoa Tran-Nguyen: [viet-khoa.tran-nguyen@u-paris.fr](mailto:viet-khoa.tran-nguyen@u-paris.fr), [khoatnv1993@gmail.com](mailto:khoatnv1993@gmail.com)
+- Achène Boumendjel: [ahcene.boumendjel@univ-grenoble-alpes.fr](mailto:ahcene.boumendjel@univ-grenoble-alpes.fr)
 
-
+## Acknowledgments
+We extend our gratitude to all contributors and the community for their invaluable support. We offer special thanks to the Laboratoire Radiopharmaceutiques Biocliniques, INSERM U1039, Université Grenoble Alpes, 38000 Grenoble, France. We also acknowledge RDKit, DeepChem, and PyTorch Geometric for their essential tools and resources. Additionally, we thank the CBH Graduate School - Université Grenoble Alpes for awarding the CBH Graduate School scholarship.

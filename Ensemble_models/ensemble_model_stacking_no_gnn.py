@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.metrics import confusion_matrix, f1_score, balanced_accuracy_score, average_precision_score, recall_score, roc_auc_score
-from sklearn.metrics import precision_recall_curve
+from sklearn.metrics import confusion_matrix, f1_score, balanced_accuracy_score, average_precision_score, roc_auc_score
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
@@ -10,7 +9,6 @@ from xgboost import XGBClassifier
 from catboost import CatBoostClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.pipeline import Pipeline
-import pickle
 
 
 #Loading datasets
@@ -281,6 +279,11 @@ def fprr(model, X_train,y_train, X_hard_test, y_hard_test, data_smiles):
      except:
          return 0     
 #evaluate the models and store results
+f1_list = []
+bacc_list = []
+ap_list = []
+roc_list = []
+ht_fpr_list = []
 print("*"*18)
 print("*" +" "+ "STACKING MODEL"+" "+"*")
 print("*" +" "*2+ "WITHOUT GNN"+" "*3+"*")
@@ -289,11 +292,25 @@ for i in range(len(models)):
     model = models[i]
     name = names[i]
     f1, bacc, ap, roc, df_prediction_val = external_validation(model, X_ensemble, y_train, X_val, y_val, val_smiles_df)
+    f1_list.append(f1)
+    bacc_list.append(bacc)
+    ap_list.append(ap)
+    roc_list.append(roc)
     print(f">  Validation Results for {names[i]}:Average Precision: {ap:.3f}, F1 Score: {f1:.3f}, ROC AUC : {roc:.3f}, Balanced Accuracy: {bacc:.3f}")
     df_prediction_val.to_csv(f"/Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1_inhibitors/dataset/Ensemble_model/validation_stacking/without_gnn/{name}_stacking_val.csv", index = False)
     f1, bacc, ap, roc, df_prediction_test = external_validation(model, X_ensemble, y_train, X_test, y_test, test_smiles_df)
+    f1_list.append(f1)
+    bacc_list.append(bacc)
+    ap_list.append(ap)
+    roc_list.append(roc)
     print(f">  Test Results for {names[i]}: Average Precision: {ap:.3f}, F1 Score: {f1:.3f}, ROC AUC: {roc:.3f}, Balanced Accuracy: {bacc:.3f}")
     df_prediction_test.to_csv(f"/Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1_inhibitors/dataset/Ensemble_model/validation_stacking/without_gnn/{name}_stacking_test.csv", index = False)
     fp,df_prediction_hard_test = fprr(model, X_ensemble, y_train, X_hard_test, y_hard_test, hard_test_smiles_df)
+    ht_fpr_list.append(fp)
     df_prediction_hard_test.to_csv(f"/Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1_inhibitors/dataset/Ensemble_model/validation_stacking/without_gnn/{name}_stacking_hard_test.csv", index = False)
     print(f">  False Positive Rate of Hard Test Set for {names[i]}: {fp:.4f}")
+    np.savetxt("/Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1_inhibitors/dataset/Ensemble_model/validation_stacking/without_gnn/f1_list_no_gnn.txt", f1_list)
+    np.savetxt("/Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1_inhibitors/dataset/Ensemble_model/validation_stacking/without_gnn/bacc_list_no_gnn.txt", bacc_list)
+    np.savetxt("/Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1_inhibitors/dataset/Ensemble_model/validation_stacking/without_gnn/ap_list_no_gnn.txt", ap_list)
+    np.savetxt("/Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1_inhibitors/dataset/Ensemble_model/validation_stacking/without_gnn/roc_list_no_gnn.txt", roc_list)
+    np.savetxt("/Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1_inhibitors/dataset/Ensemble_model/validation_stacking/without_gnn/ht_fpr_list_no_gnn.txt", ht_fpr_list)

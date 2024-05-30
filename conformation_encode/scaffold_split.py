@@ -48,7 +48,7 @@ def scaffold_split(data, smiles_col, test_size = 0.2,random_state = 42):
     return data_train, data_test
 
 
-def scaffold_cv(data, model, activity_col, ID, smiles_col, k =10, n_repeated = 3, random_state = 42):
+def scaffold_cv_repeated(data, model, activity_col, ID, smiles_col, k =10, n_repeated = 3, random_state = 42, score = 'f1'):
     folds = []
     scaffolds = {}
 
@@ -61,26 +61,44 @@ def scaffold_cv(data, model, activity_col, ID, smiles_col, k =10, n_repeated = 3
         else:
             scaffolds[scaffold].append(idx)
     scaffold_lists = list(scaffolds.values())
-    np.random.seed(random_state)
-    np.random.shuffle(scaffold_lists)
-    index_buckets = [[] for _ in range(k)]
-    for group_indices in scaffold_lists:
-        bucket_chosen = int(np.argmin([len(bucket) for bucket in index_buckets]))
-        index_buckets[bucket_chosen].extend(group_indices)
-
     scores = []
-    for re in range(n_repeated):
-        for i in range(k):
-            train_indices = list(chain.from_iterable(index_buckets[:i] + index_buckets[i + 1:]))
-            val_indices = index_buckets[i]
-            data_train = data.loc[train_indices,:]
-            data_test = data.loc[val_indices,:]
-            X_train = data_train.drop([activity_col, ID,smiles_col ],axis = 1)
-            y_train = data_train[activity_col]
-            X_test = data_test.drop([activity_col, ID,smiles_col ],axis = 1)
-            y_test = data_test[activity_col]
-            model.fit(X_train, y_train)
-            y_pred = model.predict(X_test)
-            score = f1_score(y_test, y_pred)
-            scores.append(score)
+    seeds = []
+    for i in range(n_repeated):
+        seeds.append(random_state + i)
+    for seed in seeds:
+        np.random.seed(seed)
+        np.random.shuffle(scaffold_lists)
+        index_buckets = [[] for _ in range(k)]
+        for group_indices in scaffold_lists:
+            bucket_chosen = int(np.argmin([len(bucket) for bucket in index_buckets]))
+            index_buckets[bucket_chosen].extend(group_indices)        
+        if score == 'f1':
+            for i in range(k):
+                train_indices = list(chain.from_iterable(index_buckets[:i] + index_buckets[i + 1:]))
+                val_indices = index_buckets[i]
+                data_train = data.loc[train_indices,:]
+                data_test = data.loc[val_indices,:]
+                X_train = data_train.drop([activity_col, ID,smiles_col ],axis = 1)
+                y_train = data_train[activity_col]
+                X_test = data_test.drop([activity_col, ID,smiles_col ],axis = 1)
+                y_test = data_test[activity_col]
+                model.fit(X_train, y_train)
+                y_pred = model.predict(X_test)
+                score = f1_score(y_test, y_pred)
+                scores.append(score)
+        else:
+            for i in range(k):
+                train_indices = list(chain.from_iterable(index_buckets[:i] + index_buckets[i + 1:]))
+                val_indices = index_buckets[i]
+                data_train = data.loc[train_indices,:]
+                data_test = data.loc[val_indices,:]
+                X_train = data_train.drop([activity_col, ID,smiles_col ],axis = 1)
+                y_train = data_train[activity_col]
+                X_test = data_test.drop([activity_col, ID,smiles_col ],axis = 1)
+                y_test = data_test[activity_col]
+                model.fit(X_train, y_train)
+                y_proba = model.predict_proba(X_test)
+                score = average_precision_score(y_test, y_proba[:,1])
+                scores.append(score)
+    
     return scores
