@@ -83,7 +83,7 @@ The `dataset` folder stores all training data and corresponding results.
 cd <"Cdr1_inhibitors path">
 mlflow server --host 127.0.0.1 --port 8080
 ```
-- [**graph_featurization.ipynb**](./Cdr1_inhibitors/MIL_3D_GNN/graph_featurization.ipynb): This Jupyter Notebook details the process of converting molecules into graph representations for use with the MIL-3D-GNN model.
+- [**graph_featurization.ipynb**](./MIL_3D_GNN/graph_featurization.ipynb): This Jupyter Notebook details the process of converting molecules into graph representations for use with the MIL-3D-GNN model.
 ## Contributors
 
 1. [The-Chuong Trinh](https://trinhthechuong.github.io/)

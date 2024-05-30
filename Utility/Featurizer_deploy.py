@@ -1,16 +1,3 @@
-# import numpy as np
-# import pandas as pd
-# from rdkit import Chem, DataStructs
-# import pickle
-# from rdkit.Avalon import pyAvalonTools as fpAvalon
-# from rdkit.Chem.Pharm2D import Gobbi_Pharm2D,Generate
-# # from mordred import Calculator, descriptors
-# from tqdm import tqdm # progress bar
-# import subprocess
-# tqdm.pandas()
-# import sys
-# sys.path.append("..")
-
 import numpy as np
 import pandas as pd
 from rdkit import Chem, DataStructs
