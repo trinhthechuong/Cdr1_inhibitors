@@ -35,7 +35,7 @@ pip install -r requirements.txt
 streamlit run EMCIP.py
 ```
 
-## EMCIP GUI
+## EMCIP GUI FOR NON-EXPERT USERS
 
 EMCIP provides two functionalities: Batch Prediction and Molecule Prediction.
 
@@ -61,8 +61,8 @@ In the main menu, select the `Predict a molecule` option and follow these steps:
 Additionally, you can interact with the generated conformations used as input for MIL-3D-GNN.
 ![Molecule GUI](./Images/Molecule_GUI.png)
 
-### HuggingFace Version
-The EMCIP model is also available for direct prediction on the HuggingFace platform [EMCIP-HuggingFace](https://huggingface.co/spaces/thechuongtrinh/EMCIP_Cdr1_inhibitor_prediction). However, for optimal performance, we recommend installing EMCIP locally to leverage the power of your local processors.
+### Hugging Face Version
+The EMCIP model is also available for direct prediction on the Hugging Face platform [EMCIP-Hugging Face](https://huggingface.co/spaces/thechuongtrinh/EMCIP_Cdr1_inhibitor_prediction). However, for optimal performance, we recommend installing EMCIP locally to leverage the power of your local processors.
 
 ## Additional Information
 The `dataset` folder stores all training data and corresponding results.
