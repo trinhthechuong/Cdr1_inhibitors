@@ -80,7 +80,7 @@ The `dataset` folder stores all training data and corresponding results.
 - Validation results for MIL-3D-GNN on validation, external, and hard test sets are stored in the `validation_mil_3d_gnn` subfolder. 
 - To view the hyperparameter tuning process for MIL-3D-GNN, run the following commands in your terminal:  
 ```bash
-cd <"Cdr1_inhibitors path">
+cd <"MIL_3D_GNN folder path">
 mlflow server --host 127.0.0.1 --port 8080
 ```
 - [**graph_featurization.ipynb**](./MIL_3D_GNN/graph_featurization.ipynb): This Jupyter Notebook details the process of converting molecules into graph representations for use with the MIL-3D-GNN model.
