@@ -97,6 +97,3 @@ For further queries, please contact:
 - The-Chuong Trinh: [the-chuong.trinh@etu.univ-grenoble-alpes.fr](mailto:the-chuong.trinh@etu.univ-grenoble-alpes.fr), [thechuong123@gmail.com](mailto:thechuong123@gmail.com)
 - Viet-Khoa Tran-Nguyen: [viet-khoa.tran-nguyen@u-paris.fr](mailto:viet-khoa.tran-nguyen@u-paris.fr), [khoatnv1993@gmail.com](mailto:khoatnv1993@gmail.com)
 - Achène Boumendjel: [ahcene.boumendjel@univ-grenoble-alpes.fr](mailto:ahcene.boumendjel@univ-grenoble-alpes.fr)
-
-## Acknowledgments
-We extend our gratitude to all contributors and the community for their invaluable support. We offer special thanks to the Laboratoire Radiopharmaceutiques Biocliniques, INSERM U1039, Université Grenoble Alpes, 38000 Grenoble, France. We also acknowledge RDKit, DeepChem, and PyTorch Geometric for their essential tools and resources. Additionally, we thank the CBH Graduate School - Université Grenoble Alpes for awarding the CBH Graduate School scholarship.
