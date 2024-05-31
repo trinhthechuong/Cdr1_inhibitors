@@ -35,7 +35,7 @@ pip install -r requirements.txt
 streamlit run EMCIP.py
 ```
 
-## EMCIP GUI FOR NON-EXPERT USERS
+## EMCIP GUI For AI Non-Experts Users
 
 EMCIP provides two functionalities: **Batch Prediction** and **Molecule Prediction**.
 
