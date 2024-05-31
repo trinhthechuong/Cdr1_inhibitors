@@ -19,7 +19,7 @@ st.markdown("<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs
 # HTML and CSS styles
 html_temp = """
     <div style="background-color:#2C6D78;padding:1px">
-    <h3 style="color:white;text-align:center;">EMCIP: CDR1 INHIBITORS PREDICTION MODEL </h2>
+    <h3 style="color:white;text-align:center;">EMCIP: an Ensemble Model for Cdr1 Inhibitor Prediction </h2>
     </div>
     """
 css = """
