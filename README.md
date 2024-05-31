@@ -2,7 +2,9 @@
 
 ![EMCIP Architecture](./Images/EMCIP_GUI_architecture.png)
 
-We introduce the **EMCIP model** for classifying potential Cdr1 inhibitors.
+We herewith introduce **EMCIP**, an **E**nsemble **M**odel for **C**dr1 **I**nhibitor **P**rediction, featured in our paper:
+
+Trinh, T.-C., Falson, P., Tran-Nguyen, V.-K.* & Boumendjel, A.* EMCIP: An Ensemble Model for Cdr1 Inhibitor Prediction Leveraging Traditional Machine Learning and Deep Learning Methodologies. (2024)
 
 ## Table of Contents
 
@@ -22,9 +24,9 @@ We introduce the **EMCIP model** for classifying potential Cdr1 inhibitors.
 
 ## Installation
 
-To set up the environment for EMCIP, you'll need Conda v24.1.2. For Conda installation instructions, refer to [this link](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
+To set up the environment for EMCIP, you will need Conda v24.1.2. For Conda installation instructions, refer to [this link](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
-Run the following commands in your terminal to install EMCIP:
+Run the following commands in your terminal to install the GUI for EMCIP:
 
 ```bash
 git clone https://github.com/trinhthechuong/Cdr1_inhibitors.git
@@ -35,7 +37,7 @@ pip install -r requirements.txt
 streamlit run EMCIP.py
 ```
 
-## EMCIP GUI For AI Non-Experts Users
+## EMCIP GUI for AI Non-Expert Users
 
 EMCIP provides two functionalities: **Batch Prediction** and **Molecule Prediction**.
 
@@ -87,13 +89,13 @@ mlflow server --host 127.0.0.1 --port 8080
 ## Contributors
 
 1. [The-Chuong Trinh](https://trinhthechuong.github.io/)
-2. [Viet-Khoa Tran-Nguyen](https://www.researchgate.net/profile/Viet-Khoa-Tran-Nguyen)
-3. [Pierre Falson](https://www.researchgate.net/profile/Pierre-Falson)
+2. [Pierre Falson](https://www.researchgate.net/profile/Pierre-Falson)
+3. [Viet-Khoa Tran-Nguyen](https://www.researchgate.net/profile/Viet-Khoa-Tran-Nguyen)
 4. [Achène Boumendjel](https://www.researchgate.net/profile/Ahcene-Boumendjel)
 
 ## Contact
 
 For further queries, please contact:
 - The-Chuong Trinh: [the-chuong.trinh@etu.univ-grenoble-alpes.fr](mailto:the-chuong.trinh@etu.univ-grenoble-alpes.fr), [thechuong123@gmail.com](mailto:thechuong123@gmail.com)
-- Viet-Khoa Tran-Nguyen: [viet-khoa.tran-nguyen@u-paris.fr](mailto:viet-khoa.tran-nguyen@u-paris.fr), [khoatnv1993@gmail.com](mailto:khoatnv1993@gmail.com)
-- Achène Boumendjel: [ahcene.boumendjel@univ-grenoble-alpes.fr](mailto:ahcene.boumendjel@univ-grenoble-alpes.fr)
+- Dr. Viet-Khoa Tran-Nguyen: [viet-khoa.tran-nguyen@u-paris.fr](mailto:viet-khoa.tran-nguyen@u-paris.fr), [khoatnv1993@gmail.com](mailto:khoatnv1993@gmail.com)
+- Pr. Achène Boumendjel: [ahcene.boumendjel@univ-grenoble-alpes.fr](mailto:ahcene.boumendjel@univ-grenoble-alpes.fr)
