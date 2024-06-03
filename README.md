@@ -58,7 +58,7 @@ All featurized datasets and prediction results are saved in the `Cdr1_classifica
 In the main menu, select the `Predict a molecule` option and follow these steps:
 
 1. Enter the SMILES string of your molecule.
-2. Click the `Predict` button and wait for the completion of the process. During this step, your molecule are standardized, converted into various molecular representations (RDK5, RDK6, RDK7, Avalon, Mordred, Gobbi Pharmacophore) and 3D molecular graphs, before being evaluated by the EMCIP model for prediction.
+2. Click the `Predict` button and wait for the completion of the process. During this step, your molecule will be standardized, converted into various molecular representations (RDK5, RDK6, RDK7, Avalon, Mordred, Gobbi Pharmacophore) and 3D molecular graphs, before being evaluated by the EMCIP model for prediction.
 3. The output is the predicted probability of your molecule being a Cdr1 inhibitor.
 Additionally, you can interact with the generated conformations used as input for MIL-3D-GNN.
 ![Molecule GUI](./Images/Molecule_GUI.png)
