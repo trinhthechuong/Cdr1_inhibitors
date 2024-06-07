@@ -270,8 +270,8 @@ if choose == "About":
 )
     st.markdown("<h3 style='color:#2C6D78; text-align:center;'>Author</h3>",unsafe_allow_html=True)
     st.markdown("<h5 style='text-align:center;'> <a href='https://trinhthechuong.github.io/'>The-Chuong Trinh</a></p>",unsafe_allow_html=True)
-    st.markdown("<h5 style='text-align:center;'> <a href='https://www.researchgate.net/profile/Viet-Khoa-Tran-Nguyen'>Viet-Khoa Tran-Nguyen</a></p>",unsafe_allow_html=True)
     st.markdown("<h5 style='text-align:center;'> <a href='https://www.researchgate.net/profile/Pierre-Falson'>Pierre Falson</a></p>",unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align:center;'> <a href='https://www.researchgate.net/profile/Viet-Khoa-Tran-Nguyen*'>Viet-Khoa Tran-Nguyen</a></p>",unsafe_allow_html=True)
     st.markdown("<h5 style='text-align:center;'> <a href='https://www.researchgate.net/profile/Ahcene-Boumendjel'>Ahcène Boumendjel*</a></p>",unsafe_allow_html=True)
     st.markdown("<h3 style='color:#2C6D78; text-align:center;'>Laboratory</h3>",unsafe_allow_html=True)
     st.markdown("<p style='text-align:center;'>"+

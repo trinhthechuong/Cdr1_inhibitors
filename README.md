@@ -66,6 +66,7 @@ Additionally, you can interact with the generated conformations used as input fo
 ### Hugging Face Version
 The EMCIP model is also available for direct prediction on the Hugging Face platform [EMCIP-Hugging Face](https://huggingface.co/spaces/thechuongtrinh/EMCIP_Cdr1_inhibitor_prediction). However, for optimal performance, we recommend installing EMCIP locally to leverage the power of your local processors.
 
+You can find the instructional video on how to use our model [here](https://youtu.be/HbnlXna_nqI).
 ## Additional Information
 The `dataset` folder stores all training data and corresponding results.
 ### Datasets

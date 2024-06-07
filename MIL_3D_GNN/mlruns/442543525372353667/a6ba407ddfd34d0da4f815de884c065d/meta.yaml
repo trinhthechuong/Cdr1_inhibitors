@@ -1,9 +1,8 @@
 artifact_uri: file:///Users/thechuongtrinh/Documents/Workspace/Master_thesis/Cdr1/mlruns/442543525372353667/a6ba407ddfd34d0da4f815de884c065d/artifacts
-deleted_time: 1712068811598
 end_time: 1711561459327
 entry_point_name: ''
 experiment_id: '442543525372353667'
-lifecycle_stage: deleted
+lifecycle_stage: active
 run_id: a6ba407ddfd34d0da4f815de884c065d
 run_name: capable-auk-759
 run_uuid: a6ba407ddfd34d0da4f815de884c065d
