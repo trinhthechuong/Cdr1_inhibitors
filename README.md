@@ -4,7 +4,7 @@
 
 We herewith introduce **EMCIP**, an **E**nsemble **M**odel for **C**dr1 **I**nhibitor **P**rediction, featured in our paper:
 
-Trinh, T.-C., Falson, P., Tran-Nguyen, V.-K.* & Boumendjel, A.* EMCIP: An Ensemble Model for Cdr1 Inhibitor Prediction Leveraging Traditional Machine Learning and Deep Learning Methodologies. (2024)
+Trinh, T.-C., Falson, P., Tran-Nguyen, V.-K.* & Boumendjel, A.* Ligand-Based Drug Discovery Leveraging Traditional Machine Learning and Deep Learning Methodologies Exemplified by Prediction of Cdr1 Inhibitors. (2024)
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ Trinh, T.-C., Falson, P., Tran-Nguyen, V.-K.* & Boumendjel, A.* EMCIP: An Ensemb
 
 ## Installation
 
-To set up the environment for EMCIP, you will need Conda v24.1.2. For Conda installation instructions, refer to [this link](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
+To set up the environment for EMCIP, you will need Conda (v.24.1.2). For Conda installation instructions, refer to [this link](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
 Run the following commands in your terminal to install the GUI for EMCIP:
 
